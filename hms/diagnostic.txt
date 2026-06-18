@@ -1,0 +1,6 @@
+Blood_Test 500
+ECG 700
+X_Ray 1000
+CT_Scan 3000
+MRI 5000
+Ultrasound 1500

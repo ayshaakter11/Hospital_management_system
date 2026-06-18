@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1781806065 source:/mnt/disk/Learn/C/Rimi/hms/main.c
+	<stdio.h>
+	"head.h"
+
+1781807289 /mnt/disk/Learn/C/Rimi/hms/head.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
