@@ -1,9 +1,13 @@
 #include <stdio.h>
 #include "head.h"
+#include "ai.h"
+#include <time.h>
+
 
 int main()
 {
     int choice, adminChoice, userChoice;
+    srand(time(NULL));
 
     while(1)
     {
@@ -13,7 +17,8 @@ int main()
 
         printf("1. User Panel\n");
         printf("2. Admin Panel\n");
-        printf("3. Exit\n");
+        printf("3. Ai Psychologist Advisor\n");
+        printf("4. Exit\n");
 
         printf("Enter choice: ");
         if (scanf("%d", &choice) != 1) {
@@ -89,9 +94,13 @@ int main()
                 printf("Access Denied: Incorrect Password.\n");
             }
         }
+        if(choice == 3)
+        {
+            aiPsychologist();
+        }
 
         /* ================= EXIT ================= */
-        else if(choice == 3)
+        else if(choice == 4)
         {
             printf("Exiting system...\n");
             break;
